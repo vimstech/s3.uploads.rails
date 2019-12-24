@@ -1,15 +1,11 @@
 /*
+ *= require users
  *= require_tree .
  *= require_self
  */
 
- body{
-   background-color: gray;
-}
-ul{
+body{
+  background-color: gray;
   display: flex;
-}
-ul li{
- list-style: none;
- padding: 10px;
+  flex-direction: column;
 }

@@ -1,6 +1,6 @@
 <%= form_for User.new do |f| %>
-  <%= f.file_field :photo %>
-  <%= f.submit %>
+  <%= f.file_field :photo, required: true %>
+  <%= f.submit 'Upload', :name => 'upload',class: 'button' %>
 <% end %>
 <ul>
   <% @users.each do |user|%>
