@@ -1,0 +1,9 @@
+<%= form_for User.new do |f| %>
+  <%= f.file_field :photo %>
+  <%= f.submit %>
+<% end %>
+<ul>
+  <% @users.each do |user|%>
+  <li><%=image_tag(user.photo_url, size: 100)%></li>
+  <% end %>
+</ul>
